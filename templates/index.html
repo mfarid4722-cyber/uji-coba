@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCUE 2027</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<section class="hero">
+
+<div class="container">
+
+<h1>OPEN RECRUITMENT</h1>
+
+<h2>South Campus University Expo 2027</h2>
+
+<p class="subtitle">
+Presented by Ikatan Mahasiswa Alumni
+SMAN 1 Lareh Sago Halaban
+</p>
+
+<div class="timeline">
+    <h3>Timeline</h3>
+
+    <div class="item">
+        <span>1 Juni - 25 Juni 2026</span>
+        <p>Pendaftaran</p>
+    </div>
+
+    <div class="item">
+        <span>28 Juni - 5 Juli 2026</span>
+        <p>Interview</p>
+    </div>
+
+    <div class="item">
+        <span>10 Juli 2026</span>
+        <p>Pengumuman</p>
+    </div>
+
+    <div class="item">
+        <span>15 Juli 2026</span>
+        <p>Technical Meeting</p>
+    </div>
+</div>
+
+<form action="/daftar" method="POST">
+
+<input type="text"
+name="nama"
+placeholder="Nama Lengkap"
+required>
+
+<input type="text"
+name="kampus"
+placeholder="Asal Kampus"
+required>
+
+<input type="text"
+name="jurusan"
+placeholder="Jurusan"
+required>
+
+<select name="divisi" required>
+    <option value="">Pilih Divisi</option>
+    <option>Acara</option>
+    <option>Humas</option>
+    <option>Publikasi</option>
+    <option>Perlengkapan</option>
+    <option>Konsumsi</option>
+    <option>Keamanan</option>
+</select>
+
+<textarea
+name="alasan"
+placeholder="Alasan bergabung"></textarea>
+
+<button type="submit">
+DAFTAR SEKARANG
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<script src="{{ url_for('static',
+filename='script.js') }}"></script>
+
+</body>
+</html>
